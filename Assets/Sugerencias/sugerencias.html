@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugerencias?</title>
+
+</head>
+<body>
+    <form action="/sugerencias" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="descripcion">Escribe tu sugerencia</label>
+        <textarea id="descripcion" name="descripcion" rows="5" required></textarea>
+ 
+        <input type="submit" value="Enviar Sugerencia">
+      </form>
+</body>
+</html>

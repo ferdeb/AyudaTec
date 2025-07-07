@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" href="/Assets/favicon.png" type="image/x-icon">
+    
+  <link rel="stylesheet" href="denuncias.css">
+
+  <title>Crea tu denuncia</title>
+</head>
+
+<body>
+  <h1>Crea tu denuncia</h1>
+    <p>
+      ¡Bienvenido a nuestro sitio web de denuncias ciudadanas! Aquí puedes hacer oír tu voz.
+
+      Reporta incidencias en nuestra comunidad de forma rápida y sencilla. Proporciona detalles sobre la denuncia, incluyendo evidencia si la tienes, nuestro equipo tomará medidas apropiadas para abordar cada denuncia de manera confidencial y en cumplimiento con las leyes
+      
+      Tu participación es fundamental para crear un cambio positivo en nuestra sociedad, ¡Únete a nosotros en la construcción de una comunidad segura y justa!
+    </p>
+
+  <section class="formulary">
+    <form action="/procesar.php" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="tipoDenuncia">Tipo de Denuncia:</label>
+      <select id="tipoDenuncia" name="tipoDenuncia">
+        <optgroup label="Maltrato animal">
+          <option>Abandono</option>
+          <option>Maltrato fisico</option>
+          <option>Extravio</option>
+        </optgroup>
+        
+        <optgroup label="Infraestructura Vial">
+          <option>Bacheo</option>
+          <option>Registros y coladeras</option>
+          <option>Filtraciones de agua</option>
+        </optgroup>
+          
+        <optgroup label="Robo">
+          <option>Mano Armada</option>
+          <option>Casa Habitacion</option>
+        </optgroup>
+          
+        <optgroup label="Transporte">
+          <option>Conductores</option>
+          <option>Unidades Dañadas</option>
+          <option>Acoso de Conductores</option>
+        </optgroup>
+      </select>
+
+      <label for="date">Fecha del suceso</label>
+      <input type="date" id="dateSuceso" name="dateSuceso">
+
+      <label for="date">Fecha de la denuncia</label>
+      <input type="date" id="dateDenuncia" name="dateDenuncia">
+        
+      <label for="descripcionDenuncia">Descripción de la Denuncia:</label>
+      <textarea id="descripcionDenuncia" name="descripcionDenuncia" rows="5" required></textarea>
+
+      <label for="evidenciaFotografica">Evidencia fotografica (Opcional) </label>
+      <input type="file" name="evidenciaFotografica" accept="image/*">
+
+      <input type="submit" value="Enviar Denuncia">
+    </form>
+  </section>
+</body>
+</html>

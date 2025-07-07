@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/Assets/favicon.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="login.css">
+    
+    <title>Registro</title>
+</head>
+<body>
+    
+    <h1 class="title">Registro</h1>
+
+    <p class="text">
+        ¡Bienvenido/a a nuestro sitio web de denuncias ciudadanas! Regístrate fácilmente y reporta incidencias que afecten a nuestra comunidad. 
+        Proporciona detalles sobre la denuncia, incluyendo evidencia si la tienes. Nuestro equipo revisará cuidadosamente y tomará medidas apropiadas. 
+        Tu participación es crucial para hacer un cambio positivo en nuestra sociedad. ¡Gracias por unirte a nosotros en la promoción de una comunidad segura y justa!
+    </p>
+    
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="/crearCuenta.php" method="POST">
+                <h1>Crea una cuenta</h1>
+                <span>Usa tu email para registrarte</span>
+                <input type="text" name="nombre" placeholder="Nombre" />
+                <input type="text" name="apellidos" placeholder="Apellidos" />
+                <input type="email" name="email" placeholder="Email" />
+                <input type="password" name="contrasena" placeholder="Contraseña" />
+                <input type="submit" value="Enviar">
+            </form>            
+    </div>
+
+    <div class="form-container sign-in-container">
+        <form action="/iniciarSesion.php" method="POST">
+            <h1>Inicia Sesión</h1>
+            <span>Escribe tus credenciales</span>
+            <input type="email" name="email" placeholder="Email" />
+            <input type="password" name="contrasena" placeholder="Contraseña" />
+            <a href="">¿Olvidaste tu contraseña?</a>
+            <button>Enviar</button>
+        </form>        
+    </div>
+        
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>Hola de nuevo!</h1>
+                <p>Para conectarte con nosotros, inicia sesion con tus credenciales</p>
+                <button class="ghost" id="signIn">Inicia Sesion</button>
+            </div>
+                
+            <div class="overlay-panel overlay-right">
+                <h1>Hola!</h1>
+                <p>Ingresa tus datos personales, e inicia a usar nuestro servicio</p>
+                <button class="ghost" id="signUp">Registrate</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <p>
+            Creado con &#10084;&#65039;
+        </p>
+    </footer>
+
+    <script src="login.js"></script>
+
+</body>
+</html>

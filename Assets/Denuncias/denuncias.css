@@ -1,0 +1,33 @@
+body
+{
+  font-family: 'Montserrat', sans-serif;
+  
+  background-image: url("/Assets/Denuncias/Denuncias.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgb(255, 255, 255);
+}
+
+h1
+{
+    display: flex;
+    justify-content: center;
+
+    font-size: 60px;
+}
+
+p
+{
+    font-size: 20px;
+    text-align: center;
+    white-space: pre-line;
+}
+
+.formulary
+{
+    display: flex;
+    justify-content: center;
+    white-space: pre-line;
+}
